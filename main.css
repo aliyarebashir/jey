@@ -70,11 +70,11 @@
     cursor: pointer;
 }
 .button:hover,
-.button:focus{
+.button:active{
     background-color: white;
     color: #0e4f1f;
 }
-.button:focus{
+.button:active{
     outline: none;
 }
 .section_description{
@@ -119,16 +119,19 @@ svg{
     border: 1px solid #ccc;
     width: 40%;
     padding: 1rem;
-    margin: auto;
     text-align: center;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
     position: fixed;
     top: 20%;
     left: 30%;
     z-index: 200;
-    display: inline;
+    display: none;
     background: white;
 }
+.modal__title {
+    text-align: center;
+    margin: 0 0 1rem 0;
+  }
 .modal a{
     background-color: #0e4f1f;
     padding: 0.5rem 1rem;
@@ -145,7 +148,7 @@ svg{
     cursor: pointer;
     box-shadow: none;
 }
-.modal button:focus{
+.modal button:active{
     outline: none; 
 }
 .modal a:hover,
