@@ -1,0 +1,83 @@
+main{
+    padding-top: 1rem;
+}
+.clear_fix{
+    clear: both;
+}
+
+.plans_background{
+    background: url('plans-background.jpg');
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(40%);
+}
+.section_packages{
+    background-color:rgba(213, 255, 220, 0.95);
+    border: 4px solid #0e4f1f;
+    width: 80%;
+    margin-top: 2rem;
+    padding: 2rem;
+    border-left: 0;
+}
+#plan_1{
+    position: relative;
+    margin-top: 2rem;
+}
+
+.section_packages a{
+    text-decoration: none;
+}
+.section_packages h1{
+    color:#0e4f1f ;
+}
+.section_packages h2{
+    color: #979797
+}
+.section_packages p{
+    border: 1px solid #0e4f1f;
+    padding: 1rem;
+    background-color: white;
+    font-size: 1.2rem;
+    color: #0e4f1f;
+}
+.section_second{
+    background-color: rgba(234, 252, 237, 0.95);
+    text-align: right;
+    float: right;
+    border: 4px solid #0e4f1f;
+    border-right: none;
+}
+
+.section_highlighted{
+    background-color: rgb(15, 82, 33,0.95);
+}
+.section_highlighted h1{
+    color: white;
+}
+.section_packages:hover,
+.section_packages:focus{
+    border-color: #ff1b68;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+.section_second:hover,
+.section_second:focus{
+    border-left-color: #ff1b68;
+}
+.package_badge{
+    background-color: #ff5454;
+    padding: 0.5rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 0.8rem;
+    margin: 1.2rem;
+    color: white;
+}
+
+#plan_1 .package_badge{
+    color: white;
+}

@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+}
+.main_header {
+    width: 100%;
+    background-color:#2ddf5c;
+    padding: 0.5rem 1rem;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.main_header > div{
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.main_header div a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #0e4f1f; 
+    height: 1.5rem;
+    display: inline-block;
+}
+.uhost_image{
+    height: 100%;
+}
+.main_header_nav{
+    display: inline-block;
+    width: calc(100% - 74px);
+    text-align: right;
+    vertical-align: middle;
+    margin-left: 0;
+}
+
+.list_item{
+    display: inline-block;
+    margin:0 1rem;
+}
+.list_items{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+.list_items a{
+    text-decoration: none;
+    color: #0e4f1f;
+    font-weight: bold;
+    padding: 0.2rem 0;
+}
+.list_item_cta a{
+    background-color:#ff1b68;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    color: white;
+}
+
+.list_items a:hover,
+.list_items a:focus{
+    color: white;
+    border-bottom: 5px solid white;
+
+}
+
+.list_item_cta a:hover,
+.list_item_cta a:focus{
+    background-color:white;
+    color: #ff1b68;
+    border-bottom: none;
+}
+
+#plans>h1{
+    color:#2ddf5c;
+    font-weight: bold;
+    text-align: center;
+}
+.footer{
+    background-color:black;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+.footer_lists{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.footer_list{
+    display: inline-block;
+    margin: 0 1rem;
+    
+}
+.footer_list a{
+    text-decoration: none;
+    color: white;
+}
+.footer_list a:hover,
+.footer_list a:active {
+    color: #ccc;
+}

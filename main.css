@@ -1,0 +1,117 @@
+#product_overview{
+    background: linear-gradient(to top, rgba(80, 68, 18, 0.6) 10%, transparent),
+    url("freedom.jpg") left 10% bottom 70%/cover no-repeat border-box,
+    #ff1b68;
+    color: white; 
+    font-family: 'Anton', sans-serif;
+    height: 33vh;
+    width: 100vw;
+    position: relative;    
+    margin-top: 2.75rem;
+}
+#product_overview h1{
+    color: white; 
+    font-family: 'Anton', sans-serif;
+    position: absolute;
+    bottom: 5%;
+    left: 3%;
+}
+
+
+.plan{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+.plans_article{
+    display: inline-block;
+    padding: 1rem;
+    background-color: #d5ffdc;
+    margin: 0.5rem;
+    text-align: center;
+    width: 30%;
+    vertical-align: middle;
+}
+.plans_article_lists{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
+.plans_article_lists li{
+    margin: 0.5rem 0;
+
+}
+.plan_recommended{
+    background-color: #19b84c;
+    color: white;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.5 );
+}
+.recommended_plan_badge{
+    color:#19b84c;
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.5 );
+    text-align: center;
+}
+.plans_price{
+    color: rgba(15, 14, 14, 0.733);
+}
+.button{
+    background-color:#0e4f1f ;
+    padding: 0.5rem;
+    border-radius: 8px;
+    color: white;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 1rem;
+    border: 1.5px solid #0e4f1f;
+    cursor: pointer;
+}
+.button:hover,
+.button:focus{
+    background-color: white;
+    color: #0e4f1f;
+}
+.button:focus{
+    outline: none;
+}
+.section_description{
+    background-color: #ff1b68;
+    color: white;
+    padding: 1rem;
+    margin-top: 5rem;
+}
+.section_description h1{
+    text-align: center;
+    margin: 2rem;
+}
+.section_description_lists{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.section_description_list{
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+}
+.section_description_list>div{
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    border: 2px solid #424242;
+    background-color: #ffcede;
+    margin: auto;
+}
+.section_description_list p{
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+}
+svg{
+    padding: 1.5rem;
+}
+
