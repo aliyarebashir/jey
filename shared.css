@@ -34,21 +34,16 @@ body{
     text-decoration: none;
     font-weight: bold;
     color: #0e4f1f; 
-    height: 1.5rem;
     display: inline-block;
-
+    font-size: 1.5rem;
+    vertical-align: middle;
 }
 .uhost_image{
-    height: 100%;
-    vertical-align: middle;
-    
+    height: 2.5rem;
 }
 .main_header_nav{
-    display: inline-block;
-    width: calc(100% - 122px);
-    text-align: right;
-    vertical-align: middle;
-    margin-left: 0;
+    display: none;
+   
 }
 
 .list_item{
@@ -98,8 +93,8 @@ body{
     text-align: center;
 }
 .footer_list{
-    display: inline-block;
-    margin: 0 1rem;
+    display: block;
+    margin: 1rem;
     
 }
 .footer_list a{
@@ -165,3 +160,23 @@ body{
     display: block;
     margin: 0.6rem 0;
   }
+  @media(min-width:40rem){
+    .toggle-button{
+        display: none;
+    }
+    .main_header_nav{
+        display: inline-block;
+        width: calc(100% - 44px);
+        text-align: right;
+        margin-left: 0;
+        vertical-align: middle;
+    }
+   
+  }
+  @media(min-width:40rem){
+    .footer_list{
+        display: inline-block;
+        margin: 0 1rem;
+        
+    }
+}
