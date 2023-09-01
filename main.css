@@ -1,13 +1,13 @@
 #product_overview{
     background: linear-gradient(to top, rgba(80, 68, 18, 0.6) 10%, transparent),
-    url("freedom.jpg") left 10% bottom 70%/cover no-repeat border-box,
+    url("freedom.jpg") center/cover no-repeat border-box,
     #ff1b68;
     color: white; 
     font-family: 'Anton', sans-serif;
     height: 33vh;
     width: 100vw;
     position: relative;    
-    margin-top: 2.75rem;
+    margin-top: 3.75rem;
 }
 #product_overview h1{
     color: white; 
@@ -15,22 +15,46 @@
     position: absolute;
     bottom: 5%;
     left: 3%;
+    font-size: 1.6rem;
+}
+
+@media(min-width:40rem){
+    #product_overview h1{
+        font-size: 3rem;
+    }
+    #product_overview{
+        height: 40vh;
+        background-position: 50% 25%;
+    }
 }
 
 
-.plan{
-    text-align: center;
-    width: 80%;
-    margin: auto;
-}
 .plans_article{
-    display: inline-block;
+    display:block;
     padding: 1rem;
     background-color: #d5ffdc;
-    margin: 0.5rem;
+    margin: 0.5rem 0;
     text-align: center;
-    width: 30%;
-    vertical-align: middle;
+    width: 100%;
+    min-width: 13rem;
+}
+@media(min-width:40rem){
+
+    .plan{
+        text-align: center;
+        width: 100%;
+
+    }
+    .plans_article{
+        display: inline-block;
+        width: 30%;
+        vertical-align: middle;
+        max-width: 25rem;
+    }
+    .plan_recommended{
+        box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.5 );
+    }
+
 }
 .plans_article_lists{
     list-style: none;
@@ -45,7 +69,6 @@
 .plan_recommended{
     background-color: #19b84c;
     color: white;
-    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.5 );
 }
 .recommended_plan_badge{
     color:#19b84c;
@@ -58,6 +81,7 @@
 .plans_price{
     color: rgba(15, 14, 14, 0.733);
 }
+
 .button{
     background-color:#0e4f1f ;
     padding: 0.5rem;
@@ -86,6 +110,7 @@
 .section_description h1{
     text-align: center;
     margin: 2rem;
+    min-width: 13rem;
 }
 .section_description_lists{
     list-style: none;
@@ -94,9 +119,10 @@
     text-align: center;
 }
 .section_description_list{
-    display: inline-block;
-    width: 30%;
+    display: block;
+    width: 100%;
     text-align: center;
+    min-width: 13rem;
 }
 .section_description_list>div{
     width: 128px;
@@ -113,6 +139,14 @@
 }
 svg{
     padding: 1.5rem;
+}
+@media(min-width:40rem){
+    .section_description_list{
+        display: inline-block;
+        width: 30%;
+        max-width: 25rem;
+        vertical-align: top;
+    }
 }
 
 .modal{
