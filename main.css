@@ -7,7 +7,6 @@
     height: 33vh;
     width: 100vw;
     position: relative;    
-    margin-top: 3.75rem;
 }
 #product_overview h1{
     color: white; 
@@ -18,7 +17,7 @@
     font-size: 1.6rem;
 }
 
-@media(min-width:40rem){
+@media(min-width:40rem) and (min-height: 40rem){
     #product_overview h1{
         font-size: 3rem;
     }
@@ -27,32 +26,47 @@
         background-position: 50% 25%;
     }
 }
-
+.plan{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
 
 .plans_article{
-    display:block;
     padding: 1rem;
     background-color: #d5ffdc;
     margin: 0.5rem 0;
     text-align: center;
     width: 100%;
     min-width: 13rem;
+
+
+
 }
 @media(min-width:40rem){
 
     .plan{
-        text-align: center;
         width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
 
     }
     .plans_article{
-        display: inline-block;
         width: 30%;
-        vertical-align: middle;
         max-width: 25rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 28rem;
+     
+        
     }
     .plan_recommended{
         box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.5 );
+        height: 30rem;
     }
 
 }
@@ -60,6 +74,7 @@
     list-style: none;
     padding: 0;
     margin: 0;
+    
     
 }
 .plans_article_lists li{
@@ -69,6 +84,7 @@
 .plan_recommended{
     background-color: #19b84c;
     color: white;
+    z-index: 1;
 }
 .recommended_plan_badge{
     color:#19b84c;
@@ -116,12 +132,13 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
 }
 .section_description_list{
-    display: block;
     width: 100%;
-    text-align: center;
     min-width: 13rem;
 }
 .section_description_list>div{
@@ -142,10 +159,14 @@ svg{
 }
 @media(min-width:40rem){
     .section_description_list{
-        display: inline-block;
         width: 30%;
         max-width: 25rem;
         vertical-align: top;
+    }
+    .section_description_lists{
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
     }
 }
 

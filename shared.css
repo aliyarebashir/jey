@@ -1,10 +1,24 @@
 *{
     box-sizing: border-box;
 }
+html {
+    height: 100%;
+  }
 body{
     font-family: 'Montserrat', sans-serif;
     margin: 0px;
+    display: grid;
+    grid-template-rows: 3.5rem auto fit-content(8rem);
+    grid-template-areas: "header"
+                         "main"
+                         "footer";
+/* padding-top: 3.5rem; */
+    height: 100%;
+
 }
+main {
+    grid-area: main;
+  }
 .backdrop{
     height: 100vh;
     width:  100vw;
@@ -21,11 +35,13 @@ body{
     padding: 0.5rem 1rem;
     position: fixed;
     top: 0;
-    z-index: 1;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .main_header > div{
-    display: inline-block;
     vertical-align: middle;
     text-align: center;
 }
@@ -35,11 +51,11 @@ body{
     font-weight: bold;
     color: #0e4f1f; 
     display: inline-block;
-    font-size: 1.5rem;
+    height: 2.5rem;
     vertical-align: middle;
 }
 .uhost_image{
-    height: 2.5rem;
+    height: 100%;
 }
 .main_header_nav{
     display: none;
@@ -47,13 +63,14 @@ body{
 }
 
 .list_item{
-    display: inline-block;
-    margin:0 1rem;
+    margin:auto 1rem;
+
 }
 .list_items{
     list-style: none;
     margin: 0px;
     padding: 0px;
+    display: flex;
 }
 .list_items a{
     text-decoration: none;
@@ -85,17 +102,20 @@ body{
     background-color:black;
     padding: 2rem;
     margin-top: 3rem;
+    grid-area: footer;
 }
 .footer_lists{
     list-style: none;
     padding: 0;
     margin: 0;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
 }
 .footer_list{
-    display: block;
-    margin: 1rem;
-    
+    margin: 0.5rem 0;
 }
 .footer_list a{
     text-decoration: none;
@@ -115,15 +135,17 @@ body{
     z-index: 101;
     background-color: white;
     display: none;
-    
 }
 .mobile_list_items{
     width: 90%;
     height: 100%;
     list-style: none;
-    margin: 10% auto;
+    margin: auto;
     padding: 0;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
 }
 .mobile_list_item a{
     text-decoration: none;
@@ -165,18 +187,19 @@ body{
         display: none;
     }
     .main_header_nav{
-        display: inline-block;
-        width: calc(100% - 44px);
-        text-align: right;
-        margin-left: 0;
-        vertical-align: middle;
+        display: flex;
     }
    
   }
   @media(min-width:40rem){
-    .footer_list{
-        display: inline-block;
-        margin: 0 1rem;
+    .footer_lists{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
         
+    }
+    .footer_list{
+        margin: 0 1rem;
+
     }
 }

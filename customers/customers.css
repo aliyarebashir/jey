@@ -1,23 +1,22 @@
 main{
-    padding-top: 3rem;
+    padding-top: 2.5rem;
 }
 .customers_container{
-     margin: 3rem 0;
+     display: flex;
+     flex-direction: column;
+     align-content: center;
+     justify-content: center;
+
 }
 
 .customers_image{
-    display: inline-block;
-    width: 65%;
-    vertical-align:middle;
+    width: 100%;
     box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.3);
-    max-width: 580px;
+    max-width: 40rem;
 }
 .customer_info{
-    display: inline-block;
-    width: 30%;
     padding: 0.9rem;
     text-align: right;
-    vertical-align: middle;
 }
 
 .customers_image img{
@@ -51,4 +50,20 @@ main{
 }
 .customer_2{
     text-align: right;
+}
+@media(min-width:40rem){
+    .customers_container{
+        margin: 2.5rem auto;
+        max-width: 1500px;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .customers_image{
+        width: 66%;
+    
+    }
+    .customer_info{
+        width: 30%;
+    }
 }

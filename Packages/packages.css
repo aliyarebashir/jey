@@ -6,14 +6,13 @@ main{
 }
 
 .plans_background{
-    background: url('plans-background.jpg');
+    background: url('plans-background.jpg') center/cover;
+    filter: grayscale(40%);
     position: fixed;
     width: 100vw;
     height: 100vh;
     z-index: -1;
-    background-size: cover;
-    background-position: center;
-    filter: grayscale(40%);
+   
 }
 .section_packages{
     background-color:rgba(213, 255, 220, 0.95);
@@ -80,4 +79,26 @@ main{
 
 #plan_1 .package_badge{
     color: white;
+}
+@media(min-width:40rem){
+    main{
+        max-width: 1500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+@media(min-width:1500px){
+    .section_packages{
+        border-left: 4px solid #0e4f1f;
+    }
+    .section_second{
+            border-right: 4px solid #0e4f1f;
+    }
+    .section_second:hover,
+    .section_second:active{
+        border-right-color: #ff5454;
+    }
+    
+
 }
